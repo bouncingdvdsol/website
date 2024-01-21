@@ -5,7 +5,7 @@ body {
   height: 100%;
   margin: 0;
   min-height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 .marquee {
@@ -68,6 +68,7 @@ h2 {
 .bounce-image {
   margin-top: auto;
   display: flex;
+  white-space: nowrap;
   align-items: center;
   margin-right: auto;
   padding: 0 2rem;
@@ -81,4 +82,24 @@ h2 {
   max-height: 2rem;
   margin: 1rem;
   cursor: pointer;
+}
+
+#image-list {
+  display: flex;
+  flex-direction: row;
+  max-width: 50vw;
+  overflow: auto;
+}
+
+#add-image {
+  min-height: 1.8rem;
+  min-width: 1.8rem;
+  margin: 1rem;
+  cursor: pointer;
+  color: gray;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border: 2px dashed grey;
 }
