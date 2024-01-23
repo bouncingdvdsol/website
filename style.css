@@ -26,6 +26,11 @@ body {
   flex-direction: column;
   opacity: 0.8;
 }
+
+.container a {
+  width: 48px;
+  height: 48px;
+}
 .title-section {
   width: 100%;
   align-self: center;
